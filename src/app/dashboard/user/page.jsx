@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import UserCard from '@/components/UserCard/UserCard'
+import UserCard from '../../../components/UserCard/UserCard.jsx'
 
 function UserPage() {
     const router = useRouter();

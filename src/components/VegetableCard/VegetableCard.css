@@ -1,0 +1,63 @@
+.user-details-card {
+    margin: 20px;
+    display: flex;
+    padding: 16px 30px;
+    border: .5px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-details-card>img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.user-details-card>p {
+    padding: 20px;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.container {
+    position: relative;
+}
+
+.three-dot-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 30px;
+    /* Adjust as needed */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}

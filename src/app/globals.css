@@ -110,3 +110,43 @@ p {
 .user-details-page--farm-card--headding--npk p {
     padding: 5px;
 }
+
+/* vegetable create page */
+
+.vegetable-create-form {
+    padding: 200px 300px;
+}
+
+.vegetable-create-form--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.vegetable-create-form--form label {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.vegetable-create-form--form--row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vegetable-create-form--form--buttons {
+    display: flex;
+    justify-content: end;
+    padding-top: 20px;
+}
+
+.vegetable-create-form--form--buttons button {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.vegetable-create-form--form input {
+    padding: 5px;
+    margin: 5px 0px;
+}

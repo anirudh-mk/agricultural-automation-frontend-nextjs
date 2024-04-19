@@ -2,7 +2,7 @@
 import React from 'react'
 import './layout.css'
 
-import IconButton from '@/components/IconButton/iconButton'
+import IconButton from '../../components/IconButton/IconButton.jsx'
 import { faMessage, faUser } from '@fortawesome/free-regular-svg-icons'
 import { faClose, faMapLocationDot, faPepperHot } from '@fortawesome/free-solid-svg-icons'
 
