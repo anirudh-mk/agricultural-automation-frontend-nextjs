@@ -12,6 +12,8 @@ function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  const [adminError, setAdminError] = useState(false)
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -32,11 +34,14 @@ function LoginPage() {
       }
 
       const responseData = await response.json();
-      console.log('Response from server:', responseData);
-      localStorage.setItem('accessToken', responseData.response.accessToken);
 
-      // Redirect to dashboard
-      router.push('/dashboard/user');
+      if (responseData.response[1].is_admin) {
+        localStorage.setItem('accessToken', responseData.response[0].accessToken);
+        router.push('/dashboard/user');
+      }
+      else {
+        setAdminError(true)
+      }
 
     } catch (error) {
       console.error('Error:', error);
@@ -71,6 +76,7 @@ function LoginPage() {
           <button type="submit">Login</button>
         </div>
       </form>
+      {adminError && <p>admin previlage denied</p>}
     </div>
   );
 }
