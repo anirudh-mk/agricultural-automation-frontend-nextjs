@@ -12,10 +12,10 @@ function UserCard({ onClick, firstName, lastName, userName, phone, }) {
 
 
     return (
-        <div className='user-details-card' onClick={onClick}>
-            <img src="https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250" alt="" />
-            <p>{firstName + ' ' + lastName}</p>
-            <p>{userName}</p>
+        <div className='user-details-card'>
+            <img src="https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250" alt="" onClick={onClick} />
+            <p onClick={onClick}>{firstName + ' ' + lastName}</p>
+            <p onClick={onClick}>{userName}</p>
             {phone ? <p>{phone}</p> : <p>Null</p>}
             <div className="app">
                 <div className="container">

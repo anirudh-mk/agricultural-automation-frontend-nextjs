@@ -1,3 +1,9 @@
+.mainPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .loginPage {
     background-color: white;
     padding: 60px 60px 60px 400px;
@@ -6,6 +12,7 @@
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: min-content;
 }
 
 .loginPage h1 {

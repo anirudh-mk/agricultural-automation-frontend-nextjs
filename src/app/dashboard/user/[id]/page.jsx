@@ -36,7 +36,7 @@ function Page() {
             {userData ? (
                 <div className='user-details-page'>
                     <div className='user-details-page--user-details'>
-                        <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1080&h=893&q=70&fm=webp" alt="" />
+                        <img src="https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250" alt="" />
                         <div className='user-details-page--user-details--text'>
                             <h1>{userData.first_name} {userData.last_name}</h1>
                             <p>Username: {userData.username}</p>
