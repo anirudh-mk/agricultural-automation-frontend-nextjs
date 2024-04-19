@@ -1,0 +1,18 @@
+.icon-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+    height: 30px;
+}
+
+.icon-button:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.icon-button p {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 20px 0 20px;
+}
