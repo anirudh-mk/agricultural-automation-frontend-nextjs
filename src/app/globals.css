@@ -42,3 +42,61 @@ p {
     justify-content: center;
     justify-items: center;
 }
+
+
+/* user details page */
+
+
+.user-details-page img {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+.user-details-page--user-details {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.user-details-page--user-details--text {
+    padding-left: 30px;
+}
+
+.user-details-page--user-details--text p {
+    font-size: 22px;
+}
+
+.user-details-page--farm-container {
+    padding: 10px;
+}
+
+.user-details-page--farm-card {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.user-details-page--farm-card h2 {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.user-details-page--farm-card--headding {
+    padding-bottom: 20px;
+}
+
+.user-details-page--farm-card--headding--npk {
+    display: flex;
+}
+
+.user-details-page--farm-card--headding--npk p {
+    padding: 5px;
+}
