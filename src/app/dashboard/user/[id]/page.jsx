@@ -1,8 +1,14 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { usePathname, useParams } from 'next/navigation';
+import { usePathname, useParams, useRouter } from 'next/navigation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+
 
 function Page() {
+
+    const router = useRouter()
+
     const { id } = useParams();
     const [userData, setUserData] = useState(null);
 
@@ -67,7 +73,11 @@ function Page() {
                             ))}
                         </div>
                     </div>
+                    <div className="round-icon-button" onClick={() => router.push(`/dashboard/user/${id}/farm-create`)}>
+                        <FontAwesomeIcon icon={faPlus} size="xl" color="white" />
+                    </div>
                 </div>
+
             ) : (
                 <p>Loading...</p>
             )}
