@@ -62,13 +62,15 @@ function Page() {
                                     </div>
                                     <h2>Vegetable</h2>
                                     <br />
-                                    <p>Name: {farm.vegetable.name}</p>
-                                    <div className='user-details-page--farm-card--headding--npk'>
-                                        <p>N: {farm.vegetable.n}</p>
-                                        <p>P: {farm.vegetable.p}</p>
-                                        <p>K: {farm.vegetable.k}</p>
-                                    </div>
-                                    <p>Time Required: {farm.vegetable.time_required}</p>
+                                    {farm.vegetable && <div>
+                                        <p>Name: {farm.vegetable.name}</p>
+                                        <div className='user-details-page--farm-card--headding--npk'>
+                                            <p>N: {farm.vegetable.n}</p>
+                                            <p>P: {farm.vegetable.p}</p>
+                                            <p>K: {farm.vegetable.k}</p>
+                                        </div>
+                                        <p>Time Required: {farm.vegetable.time_required}</p>
+                                    </div>}
                                 </div>
                             ))}
                         </div>
