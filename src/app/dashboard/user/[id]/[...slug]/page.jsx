@@ -1,8 +1,8 @@
 import React from 'react'
 
-function page() {
+function page({ params }) {
     return (
-        <div>page</div>
+        <div>{params.slug[1]}</div>
     )
 }
 

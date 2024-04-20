@@ -75,7 +75,7 @@ function Page() {
                             ))}
                         </div>
                     </div>
-                    <div className="round-icon-button" onClick={() => router.push(`/dashboard/user/${id}/farm-create`)}>
+                    <div className="round-icon-button" onClick={() => router.push(`/dashboard/user/${id}/farm-create/${id}`)}>
                         <FontAwesomeIcon icon={faPlus} size="xl" color="white" />
                     </div>
                 </div>
