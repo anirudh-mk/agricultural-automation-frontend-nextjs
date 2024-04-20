@@ -6,13 +6,18 @@
 
 .loginPage {
     background-color: white;
-    padding: 60px 60px 60px 400px;
     margin-top: 200px;
     display: flex;
-    flex-direction: column;
+    padding: 50px 50px 0px 50px;
+    /* flex-direction: ro; */
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: min-content;
+}
+
+.loginPage img {
+    width: 500px;
+    height: 500px;
 }
 
 .loginPage h1 {

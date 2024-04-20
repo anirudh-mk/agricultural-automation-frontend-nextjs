@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import style from './page.module.css';
 import { useRouter } from 'next/navigation';
+// import { loginImage } from '../assets/images/login.jpg'
+import Image from 'next/image';
 
 function LoginPage() {
   const router = useRouter();
@@ -54,34 +56,37 @@ function LoginPage() {
   return (
     <div className={style.mainPage}>
       <div className={style.loginPage}>
-        <h1>Login</h1>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="username">Username</label>
-          <br />
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <br />
-          <label htmlFor="password">Password</label>
-          <br />
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <br />
-          {loginError && <p className='error'>Enter username and password</p>}
-          {passwordError && <p className='error'>Invalid username or password</p>}
-          {adminError && <p className='error'>Admin privilege denied</p>}
-          <div className={style.buttonContainer}>
-            <label>Forgot password?</label>
-            <button type="submit">Login</button>
-          </div>
-        </form>
+        <img src="/login.jpg" alt="" />
+        <div>
+          <h1>Login</h1>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="username">Username</label>
+            <br />
+            <input
+              type="text"
+              id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <br />
+            <label htmlFor="password">Password</label>
+            <br />
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <br />
+            {loginError && <p className='error'>Enter username and password</p>}
+            {passwordError && <p className='error'>Invalid username or password</p>}
+            {adminError && <p className='error'>Admin privilege denied</p>}
+            <div className={style.buttonContainer}>
+              <label>Forgot password?</label>
+              <button type="submit">Login</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
