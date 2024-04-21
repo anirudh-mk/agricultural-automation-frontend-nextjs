@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation';
 
 function Page({ params }) {
     const [name, setName] = useState('');
+    const [location, setLocation] = useState('');
+    const [description, setDescription] = useState('');
     const router = useRouter();
 
     const userId = params.slug[1]; // Extracting user_id from URL params
@@ -17,7 +19,7 @@ function Page({ params }) {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ user_id: userId, name })
+                body: JSON.stringify({ user_id: userId, name, location, description })
             });
             // Redirect to the dashboard page for the specific user
             router.push(`/dashboard/user/${params.slug[1]}`);
@@ -32,6 +34,16 @@ function Page({ params }) {
                 <label>
                     Name:
                     <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                </label>
+                <br />
+                <label>
+                    Location:
+                    <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} />
+                </label>
+                <br />
+                <label>
+                    Description:
+                    <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
                 </label>
                 <br />
                 <button type="submit">Create Farm</button>
