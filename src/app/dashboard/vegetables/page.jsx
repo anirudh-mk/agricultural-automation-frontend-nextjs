@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 import VegetableCard from '../../../components/VegetableCard/VegetabaleCard.jsx'
 
 
-function page() {
+function Page() { // Renamed to comply with React component naming conventions
 
     const router = useRouter()
 
@@ -51,35 +51,4 @@ function page() {
     )
 }
 
-export default page
-
-
-
-
-
-//     return (
-//         <div>
-//             {vegetableList.map(vegetable => {
-//                 console.log('Vegetable Data:', vegetable); // Log vegetable data
-//                 return (
-//                     <div key={vegetable.id}>
-//                         <p>Name: {vegetable.name}</p>
-//                         <p>N: {vegetable.n}</p>
-//                         <p>P: {vegetable.p}</p>
-//                         <p>K: {vegetable.k}</p>
-//                         <p>Time Required: {vegetable.time_required}</p>
-//                         <UserCard
-//                             firstName={vegetable.name}
-//                             // Assuming vegetable object has a 'name' property
-//                             onClick={() => { router.push(`/dashboard/vegetable/${vegetable.id}`) }} />
-//                     </div>
-//                 );
-//             })}
-//             <div className="round-icon-button" onClick={() => router.push('/dashboard/vegetable/create')}>
-//                 <FontAwesomeIcon icon={faPlus} size="xl" color="white" />
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default VegetablePage;
+export default Page;
