@@ -14,7 +14,7 @@ function Page({ params }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await fetch('http://127.0.0.1:8000/api/v1/farm/create/', {
+            await fetch('http://anirudhmk123.pythonanywhere.com/api/v1/farm/create/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

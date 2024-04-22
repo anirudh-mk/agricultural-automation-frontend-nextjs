@@ -23,7 +23,7 @@ function LoginPage() {
     }
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/v1/user/login/', {
+      const response = await fetch('http://anirudhmk123.pythonanywhere.com/api/v1/user/login/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ function LoginPage() {
 
       const responseData = await response.json();
 
-      if (responseData.response[1].is_admin) {
+      if (!responseData.response[1].is_admin) {
         localStorage.setItem('accessToken', responseData.response[0].accessToken);
         router.push('/dashboard/user');
       } else {

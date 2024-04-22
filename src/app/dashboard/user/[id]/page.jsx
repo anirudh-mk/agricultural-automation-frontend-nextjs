@@ -15,7 +15,7 @@ function Page() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://127.0.0.1:8000/api/v1/user/details/`, {
+                const response = await fetch(`http://anirudhmk123.pythonanywhere.com/api/v1/user/details/`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

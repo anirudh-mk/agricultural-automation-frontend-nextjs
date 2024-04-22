@@ -19,7 +19,7 @@ function page() {
 
     const fetchVegetableList = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/v1/vegetable/list/');
+            const response = await fetch('http://anirudhmk123.pythonanywhere.com/api/v1/vegetable/list/');
             if (!response.ok) {
                 throw new Error('Failed to fetch vegetable list');
             }
