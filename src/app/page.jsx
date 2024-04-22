@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import style from './page.module.css';
 import { useRouter } from 'next/navigation';
 // import { loginImage } from '../assets/images/login.jpg'
-import Image from 'next/image';
+// import Image from 'next/image';
 
 function LoginPage() {
   const router = useRouter();

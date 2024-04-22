@@ -1,13 +1,13 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { usePathname, useParams, useRouter } from 'next/navigation';
+import { useParams, useRouter as UserDetailsPage } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 
 function Page() {
 
-    const router = useRouter()
+    const router = UserDetailsPage()
 
     const { id } = useParams();
     const [userData, setUserData] = useState(null);
